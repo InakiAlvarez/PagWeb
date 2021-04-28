@@ -1,0 +1,116 @@
+.h1{
+	background-color: rgb(249, 231, 159);
+	font-size: 50px;
+	font-size: normal;
+	font-size: italic;
+	font-size: oblique;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center; 
+}
+
+.h2{
+	font-size: 20px;
+	font-size: normal;
+	font-size: italic;
+	font-size: oblique;
+	font-family: arial;
+	text-align: center;
+}
+
+header{
+	text-align: justify;
+	font-family: arial;
+}
+
+body{
+	background-color: rgb(249, 231, 159);
+}
+
+footer{
+	background-color: black;
+	color: rgb(249, 231, 159);
+	text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+table { 
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0px;
+  border-color: rgb(249, 231, 159);
+  font-family:Arial, Helvetica, sans-serif
+ 
+}
+
+table tr th{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.galeria {
+  height: calc( var(--h) + 3em);
+  width: var(--w);
+  margin: 1em auto;
+  border: 1px solid brown;
+  position: relative;  
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-1 * var(--h) - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
+
+
+nav {
+  padding: 3em;
+  font-family: arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav ul {
+  list-style: none;
+  padding: 5;
+  margin: 5;
+  background: black;
+}
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+nav li a:hover {
+  background: rgb(249, 231, 159);
+  color: black;
+}
+
+@media screen and (min-width: 480px) {
+  nav ul {
+    display: flex;
+   justify-content:space-between;
+  }
+}
