@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Todo Rico</title>
+    <link rel="stylesheet" type="text/css" href="todoricoestilos1.css" />
+</head>
+
+<header>
+  <h1 style="color:black; font-family: arial ; font-size:70px">Todo Rico <img src= "torrico.jpg" height="200" width="300"></h1> 
+</header>
+
+<body style="font-family: arial; font-size: 20px; text-align: center">
+<h1 style="color: black; font-family: arial; font-size:33px; text-align: center;">Inicia sesión para realizar tus pedidos</h1> <br> 
+
+ <form action="mailto:atropeano@murialdo.edu.ar" method="post" enctype="text/plain">
+  
+  <!--input type  -->
+Ingrese su nombre:
+  <input type="text" name="nombre">
+  <br>
+  <br>
+Ingrese su apellido:
+  <input type="text" name="apellido">
+  <br>
+  <br>
+  Ingrese su contraseña:
+  <input type = "password" name="contraseña" >
+  <br>
+  <br>
+
+ <!--lista desplegable  -->
+Entrega/Retiro:
+  <select name="Opciones">
+    <option value = "Sucursal Caseros">Sucursal Caseros</option>
+    <option value = "Sucursal Villa Bosch">Sucursal Villa Bosch</option>
+    <option value = "Entrega a domicilio">Entrega a domicilio</option>
+    </select>
+    <br>
+    <br>  
+
+   <!--opciones  -->  
+Selecciona método de pago: <br>  
+    <input type="radio" id="Efectivo" name="pago" value="Efectivo" >
+     <label for= "Efectivo">Efectivo</label>
+    <input type="radio" id="Tarjeta de crédito" name="pago" value="Tarjeta de crédito">
+     <label for= "Tarjeta de crédito">Tarjeta de crédito</label>
+     <br>  
+     <br>
+
+  <!--cuadro de texto  -->
+  Algun detalle que desee agregar para la entrega/retiro: <br>   
+  <textarea name="comentario" rows="5" cols="40">Escribe tu comentario...</textarea>  <br> <br>   
+  
+  <!--botón  -->
+     <input type="submit" value="Enviar" style="background-color: white; font-family:arial; font-size:30px">
+
+   </form>
+</body>
+</html>
